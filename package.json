@@ -4,7 +4,8 @@
   "description": "For Adriel Colon Casiano's Law Firm Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch"
   },
   "repository": {
     "type": "git",
