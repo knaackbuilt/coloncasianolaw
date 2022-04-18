@@ -9,9 +9,9 @@ module.exports = {
      },
     extend: {
       colors: {
-        'admin-first': '#ac3f14',
-        'admin-second': '#cf7954',
-        'admin-third': '#f3d3c1'
+        'ccl-first': '#ac3f14',
+        'ccl-second': '#cf7954',
+        'ccl-third': '#f3d3c1'
       }
     }
   },
