@@ -5,13 +5,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['', 'Arial', 'sans-serif']
+      sans: ['unna', 'helvetica', 'serif']
      },
     extend: {
       colors: {
-        'ccl-first': '#ac3f14',
-        'ccl-second': '#cf7954',
-        'ccl-third': '#f3d3c1'
+        'ccl-dark': '#364d0a',
+        'ccl-mid': '#96b026',
+        'ccl-light': '#d2e464'
       }
     }
   },
