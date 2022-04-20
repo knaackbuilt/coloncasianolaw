@@ -22,12 +22,7 @@
   <body class="">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
     {% from '../_includes/_components.njk' import nav,footer  %}
-      <header class="flex justify-center md:justify-start py-4 border-t-2 border-ccl-dark"> 
-        <div class="acc-logo h-28 w-72">
-        <span class="sr-only"> The Law Firm of Adriel Colon-Casiano </span>
-        </div>
-      </header>
-     {# {% include 'nav-data.md' %} #}
+     {% include 'nav-data.md' %}
     <main class="mx-8" id="main-site-content-for-skiplink">
     {{ content | safe }}
     </main>
