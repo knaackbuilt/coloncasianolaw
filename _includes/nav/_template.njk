@@ -5,18 +5,18 @@
           <span class="sr-only"> The Law Firm of Adriel Colon-Casiano </span>
         </div>
           <div class="flex lg:hidden w-1/4 justify-end">
-            <button class="block lg:hidden p-4 mr-8 focus:!outline-white text-black nysds-mobile-button" id="nysds-mobile-menu" aria-controls="nysds-list-menu" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000" class="bi bi-list" viewBox="0 0 16 16">
+            <button class="block lg:hidden p-4 mr-8 focus:!outline-white text-black mobile-button" id="mobile-menu" aria-controls="list-menu" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000" class="bi bi-list mobile-button" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
               <span class="sr-only">Mobile Navigation Menu</span>
             </button>
           </div>
   
-      <ul class="hidden lg:static lg:flex lg:flex-row lg:items-center w-full justify-end mr-8 text-black captialize font-bold" id="nysds-list-menu" >
+      <ul class="hidden absolute right-0 lg:static lg:flex lg:flex-row lg:items-center w-full justify-end mr-8 text-black captialize font-bold" id="list-menu" >
       {% for links in params.items %}
         <li class="m-4 p-4">
-            <a href="{{links.link}}" class="inline-block nysds-submenu-link">{{links.title}}</a>
+            <a href="{{links.link}}" class="inline-block submenu-link">{{links.title}}</a>
         </li>
       {% endfor %}
       </ul>
