@@ -14,6 +14,7 @@ mobileicon.addEventListener("click", mobiletoggle)
 function mobiletoggle () {
     if (menu.classList.contains("hidden")) {
         menu.classList.toggle("hidden")
+        menu.classList.add("flex")
         mobilemenu.setAttribute('aria-expanded', true)
     }
     else {
