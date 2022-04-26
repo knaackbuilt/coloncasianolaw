@@ -1,19 +1,31 @@
 {{ footer({ 
-    agencyname: "OGS Digital Services Utilities",
+    title: "Adirel Colon-Casiano",
     link: "/",
-    arialabel: "OGS Digital Services Utilities",
-    color: "bg-admin-third",
-    github:"https://github.com/OGS-Digital-Service/digital-services-utilities",
     items: [
     {
-      text: "Accessibility",
-      link: "/accessibility",
-      arialabel:"Read our accessibility statement"
+      text: "Legal Disclosures",
+      link: ""
     },
      {
-      text: "Contact",
-      link: "https://ogs.ny.gov/contact-office-general-services",
-      arialabel:"Link to Agency's contact information."
+      text: "Contact Adriel",
+      link: ""
      }
+    ],
+    social: [
+      {
+        twitter: "",
+        aria:"",
+        link:""
+      },
+      {
+        facebook: "",
+        aria:"",
+        link:""
+      },
+      {
+        instagram:"",
+        aria:"",
+        link:""
+      }
     ]
       })}}
