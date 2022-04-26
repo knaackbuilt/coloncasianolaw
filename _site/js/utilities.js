@@ -2,11 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Global Nav Menu Interactions
 const mobilemenu = document.getElementById('mobile-menu');
+const mobileicon = document.getElementById('mobile-icon');
 const menu = document.getElementById('list-menu');
 const lastli = menu.lastElementChild;
-console.log(lastli)
-lastli.addEventListener("focusout", mobiletoggle) // last list item on focusout closes menu
-mobilemenu.addEventListener("click", mobiletoggle) //mobile menu show hide and aria-expanded
+console.log(mobileicon)
+lastli.addEventListener("focusout", mobiletoggle) 
+mobilemenu.addEventListener("click", mobiletoggle)
+mobileicon.addEventListener("click", mobiletoggle)
+
+
 function mobiletoggle () {
     if (menu.classList.contains("hidden")) {
         menu.classList.toggle("hidden")
