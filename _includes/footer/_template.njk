@@ -1,9 +1,9 @@
-<footer class="flex w-full h-60 border-t-2 border-ccl-dark bg-ccl-mid text-white">
+<footer class="flex w-full h-40  bg-ccl-mid text-white">
     <section class="mx-8">
     <h1 class="font-bold text-2xl text-ccl-dark uppercase"><a href="{{params.link}}">{{params.title}}</a></h1>
     <ul class="flex flex-col lg:flex-row">
         {% for links in params.items %}
-        <li class="">
+        <li class="mx-4">
             <a href="{{links.link}}">{{links.text}}</a>
         </li> 
         {% endfor %}
