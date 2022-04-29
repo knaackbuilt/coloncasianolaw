@@ -32,9 +32,9 @@
           <span class="sr-only"> The Law Firm of Adriel Colon-Casiano </span>
         </div>
           <div class="flex lg:hidden w-1/4 justify-end">
-            <button class="block h-28 lg:hidden p-4 mr-2 md:mr-8 focus:!outline-white text-black mobile-button" id="mobile-menu" aria-controls="list-menu" aria-expanded="false">
+            <button class="block h-28 lg:hidden p-4 mr-2 md:mr-8 focus:!outline-ccl-dark text-black mobile-button" id="mobile-menu" aria-controls="list-menu" aria-expanded="false">
               
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000" class="bi bi-list mobile-button"  viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000" class="bi bi-list mobile-button relative "  viewBox="0 0 16 16">
                 <path id="mobile-icon" class="mobile-button" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
               
@@ -109,7 +109,7 @@ function filter(e){
     document.getElementById("filter-count").innerHTML = `<strong>${filterCount}</strong> ${word} results`
 }
 </script>
-<section class="flex flex-col w-3/4 lg:w-1/2 m-auto py-8">
+<section class="flex flex-col w-full lg:w-1/2 m-auto py-8">
 <div role="region" aria-label="Component search" aria-atomic="true" class="mb-8">
     <label for="ccl-filter" class="text-xl font-bold ">Search the Blog</label>
     <input class="border-2 border-ccl-dark ml-2 p-1" id="ccl-filter" class="" type="text" onkeyup="filter(this)"/>

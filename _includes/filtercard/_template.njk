@@ -14,7 +14,7 @@ function filter(e){
     document.getElementById("filter-count").innerHTML = `<strong>${filterCount}</strong> ${word} results`
 }
 </script>
-<section class="flex flex-col w-3/4 lg:w-1/2 m-auto py-8">
+<section class="flex flex-col w-full lg:w-1/2 m-auto py-8">
 <div role="region" aria-label="Component search" aria-atomic="true" class="mb-8">
     <label for="ccl-filter" class="text-xl font-bold ">Search the Blog</label>
     <input class="border-2 border-ccl-dark ml-2 p-1" id="ccl-filter" class="" type="text" onkeyup="filter(this)"/>
