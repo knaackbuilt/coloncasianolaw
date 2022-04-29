@@ -10,27 +10,28 @@ function filter(e){
         }
     });
     filterCount = document.querySelectorAll('.filter-card:not(.hidden)').length;
-    var word = (filterCount === 1) ? "filter" : "filters";
+    var word = (filterCount === 1) ? "blog" : "blog";
     document.getElementById("filter-count").innerHTML = `<strong>${filterCount}</strong> ${word} results`
 }
 </script>
-<div role="region" aria-label="Component search" aria-atomic="true" class="">
-    <label for="nysds-filter">Type to filter by keyword</label>
-    <input class="border-2 border-black" id="nysds-filter" class="" type="text" onkeyup="filter(this)"/>
+<section class="flex flex-col w-3/4 lg:w-1/2 m-auto py-8">
+<div role="region" aria-label="Component search" aria-atomic="true" class="mb-8">
+    <label for="ccl-filter" class="text-xl font-bold ">Search the Blog</label>
+    <input class="border-2 border-ccl-dark ml-2 p-1" id="ccl-filter" class="" type="text" onkeyup="filter(this)"/>
     <p class="" aria-live="polite"><span id="filter-count"></p>
   </div>
 <h2>{{params.heading}}</h2>
 <ul class="list-none">
 {%for filtercard in params.filtercards%}
+<a href="{{filtercard.link}}" class="">
 <li class="filter-card" role="region" aria-atomic="true" aria-label="{{filtercard.title}}" data-meta="{{filtercard.title}} {{filtercard.description}}">
-    <div class="border-2 rounded border-black">
-      <header class="">
-        <h3 class=""><a href="{{filtercard.link}}">{{filtercard.title}}</a></h3>
-      </header>
-      <div class="">
-        <p>{{filtercard.description}}</p>
-        </div>
+    <div class="my-4 p-4 border border-ccl-mid rounded">
+        <h3 class="text-2xl hover:underline">{{filtercard.title}}</h3>
+        <div class="text-sm uppercase pt-2"> {{filtercard.date}} </div>
+        <p class="py-4">{{filtercard.description}}</p>
     </div>
   </li>
+  </a>
   {%endfor%}
 </ul>
+</section>

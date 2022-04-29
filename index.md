@@ -8,7 +8,7 @@ title: Law Firm of Adriel Colon-Casiano
     title:"Defending The People",
     date: "February 16, 2022",
     image:"capitol.jpg",
-    description:"A short sentence that is really catching and informative. Adirel is super smart, kind, and is also 6'2' so basically the whole package.",
+    description:"A short sentence that is really catching and informative. Adriel is super smart, kind, and is also 6'2' so basically the whole package.",
     buttons: [
         {
             text:"Contact Him",
@@ -21,14 +21,14 @@ title: Law Firm of Adriel Colon-Casiano
 })}}
 
 {{ bio({
-    title:"Adirel Colon",
+    title:"Adriel Colon",
     content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
-    attribute:"Adirel",
+    attribute:"Adriel",
     link:"/about",
     linktext:"Read His Bio",
     arialabel:"",
     image:"/img/headshot.jpg",
-    imagealt:"Adirel Colon-Casiano"
+    imagealt:"Adriel Colon-Casiano"
 })}}
 
 
